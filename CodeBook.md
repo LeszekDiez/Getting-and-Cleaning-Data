@@ -601,6 +601,23 @@ The following files are available for the train and test data. Their description
 * `STANDING` (value `5`)
 * `LAYING` (value `6`)
 
+## Variables
+
+* trainingSet: this is the DataSet for X_train.txt (training DataSet)
+* testSet: this is the DataSet for X_test.txt (test DataSet)
+* trainingLabels: this is the DataSet for y_test.txt (training Labels)
+* testLabels: this is the DataSet for y_test.txt (test Labels) 
+* trainingSubject: This is the DataSet for the subjects who performed the train activity. Its range is from 1 to 30. 
+* testSubject: This is the DataSet for the subjects who performed the test activity.  Its range is from 1 to 30. 
+* features: DataSet for the columns names of the training and test DataSet
+* activityLabels: DataSet for the activities labels.
+* joinSet: it's a merged dataset of the Training and Test DataSets (trainingSet and testSet)
+* joinLabels: it's a merged dataset of the Training and Test Labels (trainingLabels and testLabels)
+* joinSubject: it's a merged dataset of the Training and Test DataSets (trainingSubject and testSubject)
+* joinSet_Mean_Std: this is a DataSet containing only the columns for the measurements on the mean and standard deviation for each measurement. 
+* allData: This is a DataSet which merges the Subjects, Labels and DataSets for means and std (joinSet, joinLabels, joinSet_Mean_Std)
+* tidy_dataset: This a DataSet with the average of each variable for each activity and each subject. 
+
 #Data Transformation Steps
 ### Step 1
 * The fiest step is to merge the training and the test sets to create an unified DataSet
